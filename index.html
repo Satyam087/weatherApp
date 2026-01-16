@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="top"> <img src="./Assets/Screenshot 2025-12-19 at 6.11.13 PM.png" alt="logo"> </div>
+            <div class="line"></div>
+            <div class="one" style="cursor: pointer;">
+                <div class="main-app"> <i class="fa-solid fa-circle"></i> </div>
+                <div class="Aboutme"> <i class="fa-solid fa-address-card"></i> </div>
+                <div class="ContactUs"> <i class="fa-solid fa-user"></i> </div>
+            </div>
+            <div class="two"> <img src="./Assets/pngtree-user-profile-avatar-png-image_10211467.png" alt="dp"></div>
+        </div>
+        <div class="profilecard">
+            <div class="dp"><img src="./Assets/pngtree-user-profile-avatar-png-image_10211467.png" alt=""></div>
+            <div class="txt">
+                <div class="name"><p>Hello!</p></div>
+                <div class="place"><p>TrueMan</p></div>
+            </div>
+        </div>
+        <div class="search-toggle">
+            <div class="cont">
+                <div class="search">
+                    <input type="text" placeholder="Enter City Name..." class="citySearch">
+                    <button class="srch"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="toggle left">
+                    <button><i class="fa-regular fa-moon"></i></button>
+                </div>
+                <div class="left">
+                    <button><i class="fa-regular fa-comment-dots"></i></button>
+                </div>
+                <div class="left">
+                    <button><i class="fa-regular fa-bell"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="weathercard">
+            <div class="f">
+                <div class="loc">
+                    <p> <i class="fa-solid fa-location-dot"></i> <span class="locText">New Delhi, India</span></p>
+                </div>
+                <div class="text">
+                    <h1>Weather</h1>
+                    <p>Now</p>
+                </div>
+                <div class="temp"> 
+                    <h1>25°C</h1>
+                    <p>Feels Like 26°C</p>
+                </div>
+            </div>
+            <div class="t">
+                <div class="weather-image">
+                    <img src="./Assets/Screenshot_2025-12-20_at_12.15.34_PM-removebg-preview.png" alt="">
+                </div>
+                <div class="hori">
+                    <div class="visiblity">
+                        <h2>Visiblity</h2>
+                        <p>4.3km</p>
+                    </div>
+                    <div class="humidity">
+                        <h2>Humidity</h2>
+                        <p>87%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d28024.838156878912!2d77.0932736!3d28.5966336!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1766214764247!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="daywiseweather">
+            <div class="item">
+                <div class="tup"><h3>Mon</h3></div>
+                <div><i>☀️</i></div>
+                <div class="small-temp"><p>23°C</p></div>
+            </div>
+            <div class="item">
+                <div class="tup"><h3>Tue</h3></div>
+                <div><i>☀️</i></div>
+                <div class="small-temp"><p>23°C</p></div>
+            </div>
+            <div class="item">
+                <div class="tup"><h3>Wed</h3></div>
+                <div><i>☀️</i></div>
+                <div class="small-temp"><p>23°C</p></div>
+            </div>
+            <div class="item">
+                <div class="tup"><h3>Thu</h3></div>
+                <div><i>☀️</i></div>
+                <div class="small-temp"><p>23°C</p></div>
+            </div>
+            <div class="item">
+                <div class="tup"><h3>Fri</h3></div>
+                <div><i>☀️</i></div>
+                <div class="small-temp"><p>23°C</p></div>
+            </div>
+            <div class="item">
+                <div class="tup"><h3>Sat</h3></div>
+                <div><i>☀️</i></div>
+                <div class="small-temp"><p>23°C</p></div>
+            </div>
+            <div class="item">
+                <div class="tup"><h3>Sun</h3></div>
+                <div><i>☀️</i></div>
+                <div class="small-temp"><p>23°C</p></div>
+            </div>
+        </div>
+        <div class="extracard">
+            <div class="firstHalf">
+                <h2>Mist</h2>
+                <img src="./Assets/237-2372176_weather-app-weather-app-logo.png" alt="" height="150px" width="150px">
+            </div>
+            <div class="secondHalf">
+                <h2>Sunset: 6:30PM</h2>
+                <h2>Sunrise: 4:30AM</h2>
+                <h2>Pressure: 430atm</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
