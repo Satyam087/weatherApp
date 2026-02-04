@@ -1,0 +1,1 @@
+Linkedin Post: https://www.linkedin.com/posts/satyamkumarsingh-ai_javascript-openweatherapi-googlemaps-activity-7419661812985540608-GJSs?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEthsccBRyjkTnqw9QGYYjSbQN_UbF2gzyQ
