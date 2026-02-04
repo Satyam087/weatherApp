@@ -7,6 +7,16 @@ input.addEventListener("keydown", (e) => {
     if (e.key === "Enter") handleSearch();
 });
 
+const loader = document.getElementById("loader");
+
+function showLoader() {
+  loader.classList.remove("hidden");
+}
+
+function hideLoader() {
+  loader.classList.add("hidden");
+}
+
 function getCityName() {
     const value = input.value.trim();
     if (!value) return null;
@@ -20,6 +30,7 @@ async function handleSearch() {
         return;
     }
     try{
+        showLoader();
         const weatherData = await fetchWeatherData(city.toLowerCase());
         updateMap(`${weatherData.name}`);
         renderData(weatherData);
@@ -27,6 +38,8 @@ async function handleSearch() {
     catch(err){
         alert(err.message);
         return;
+    }finally{
+        hideLoader();
     }
     
 }
@@ -74,3 +87,4 @@ function updateMap(city) {
 
   iframe.src = `https://www.google.com/maps?q=${encodeURIComponent(city)}&output=embed`;
 }
+
